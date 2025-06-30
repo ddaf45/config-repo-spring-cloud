@@ -1,5 +1,5 @@
 server:
-  port: 8082 # ¡Este es el puerto correcto!
+  port: 8082
 
 spring:
   application:
@@ -9,6 +9,7 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:8761/eureka/
-eureka:
-  instance:
-    hostname: localhost
+
+# Habilitar Feign
+spring.cloud.openfeign.client.config.default.connect-timeout: 5000
+spring.cloud.openfeign.client.config.default.read-timeout: 5000
