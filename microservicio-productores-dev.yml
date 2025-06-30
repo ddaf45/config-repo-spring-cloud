@@ -1,2 +1,0 @@
-message: Hola desde Microservicio Productores (DEV) - Configuracion Centralizada
-db.url: jdbc:mysql://localhost:3306/productores_dev?useSSL=false
